@@ -1,9 +1,8 @@
-  name: LoLib
+name: LoLib
 version: '${version}'
 main: moe.xmcn.spcraft.lolib.LoLib
 api-version: '1.20'
 load: STARTUP
-dependencies: []
 authors:
     - XiaMoHuaHuo_CN
 description: LoLib universal minecraft API lib.
