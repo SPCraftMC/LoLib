@@ -27,7 +27,6 @@ public class TomlConfiguration {
      * 加载新配置文件
      *
      * @param file 文件
-     * @return
      */
     public void loadNewConfiguration(File file) {
         this.file = file;

@@ -4,6 +4,9 @@ import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 import moe.xmcn.spcraft.lolib.modules.logger.Logger;
 
+/**
+ * 插件接口核心
+ */
 public class PluginCore {
 
     private final @NotNull Plugin plugin;

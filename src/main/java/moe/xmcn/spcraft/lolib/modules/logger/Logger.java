@@ -7,6 +7,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 日志模块
+ */
 public class Logger {
 
     private @NotNull PluginCore pluginCore;
