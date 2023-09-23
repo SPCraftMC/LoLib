@@ -1,11 +1,23 @@
 package moe.xmcn.spcraft.lolib;
 
 import moe.xmcn.spcraft.lolib.modules.logger.Logger;
+import moe.xmcn.spcraft.lolib.objects.PluginCore;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LoLib extends JavaPlugin {
 
-    Logger logger = new Logger(this);
+    private static Plugin LoLibInstance;
+
+    @Override
+    public void onLoad() {
+        // 定义插件入口
+        LoLibInstance = this;
+    }
+
+    // 定义对象
+    public final static PluginCore INSTANCE = new PluginCore(LoLibInstance);
+    private final static Logger logger = INSTANCE.getLogger();
 
     @Override
     public void onEnable() {

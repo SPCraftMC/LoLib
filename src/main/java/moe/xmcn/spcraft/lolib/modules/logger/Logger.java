@@ -1,22 +1,22 @@
 package moe.xmcn.spcraft.lolib.modules.logger;
 
+import moe.xmcn.spcraft.lolib.objects.PluginCore;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.PluginLogger;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import java.awt.print.Paper;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Logger {
 
-    Plugin plugin;
+    private @NotNull PluginCore pluginCore;
+    private final Plugin plugin = pluginCore.getInstance();
 
-    public Logger(Plugin plugin) {
-        this.plugin = plugin;
+    public Logger(@NotNull PluginCore pluginCore) {
+        this.pluginCore = pluginCore;
     }
 
+    // 获取原始插件日志模块对象
     java.util.logging.Logger logger = plugin.getLogger();
 
     /**
