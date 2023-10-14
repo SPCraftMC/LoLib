@@ -6,6 +6,7 @@ import moe.xmcn.spcraft.lolib.modules.logger.Logger;
 
 /**
  * 插件接口核心
+ * 通过该接口获取一个 LoLib 插件实例
  */
 public class PluginCore {
 
