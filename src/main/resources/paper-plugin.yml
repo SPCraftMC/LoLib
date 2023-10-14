@@ -6,3 +6,4 @@ load: STARTUP
 authors:
     - XiaMoHuaHuo_CN
 description: LoLib universal minecraft API lib.
+folia-support: true
