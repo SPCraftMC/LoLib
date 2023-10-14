@@ -21,6 +21,7 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
     implementation("org.tomlj:tomlj:1.1.0")
+    implementation("com.alibaba.fastjson2:fastjson2:2.0.41")
 }
 
 def targetJavaVersion = 17
