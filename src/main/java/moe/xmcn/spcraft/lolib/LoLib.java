@@ -9,18 +9,16 @@ public final class LoLib extends JavaPlugin {
 
     private static Plugin LoLibInstance;
 
-    @Override
-    public void onLoad() {
-        // 定义插件入口
-        LoLibInstance = this;
-    }
-
     // 定义对象
-    public final static PluginCore INSTANCE = new PluginCore(LoLibInstance);
-    private final static Logger logger = INSTANCE.getLogger();
+    public static PluginCore INSTANCE;
+    private static Logger logger;
 
     @Override
     public void onEnable() {
+        // 定义插件入口
+        INSTANCE = new PluginCore(LoLibInstance);
+        logger = INSTANCE.getLogger();
+
         logger.info("LoLib 正在初始化......");
         // TODO: 留着到时候用的位置
 
