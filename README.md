@@ -2,6 +2,8 @@
 
 # LoLib
 
+![Jitpack](https://jitpack.io/v/SPCraftMC/LoLib.svg)
+
 SPCraftMC通用API库，用于提供一套统一的操作API。
 
 ## 功能设计
