@@ -15,6 +15,7 @@ public final class LoLib extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        LoLibInstance = this;
         // 定义插件入口
         INSTANCE = new PluginCore(LoLibInstance);
         logger = INSTANCE.getLogger();
